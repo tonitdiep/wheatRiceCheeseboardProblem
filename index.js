@@ -10,3 +10,20 @@ squaresNeeded(2) === 2
 squaresNeeded(3) === 2
 squaresNeeded(4) === 3
 Input is always going to be valid/reasonable: ie: a non negative number; extra cookie for not using a loop to compute square-by-square (at least not directly) and instead trying a smarter approach [hint: some peculiar operator]; a trick converting the number might also work: impress me!
+
+function squaresNeeded(grains){
+  //your code here
+  
+//   var square = 0;
+
+//     while (grains >= 2** square){
+//       square++
+//     }
+//   console.log('square:', square)
+//   return square
+
+   if (!grains) return 0;
+  console.log('grains:', grains.toString(2).length)
+  return grains.toString(2).length;
+
+}
